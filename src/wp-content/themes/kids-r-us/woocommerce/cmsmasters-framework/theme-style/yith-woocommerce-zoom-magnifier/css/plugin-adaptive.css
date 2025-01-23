@@ -1,0 +1,28 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.0
+ * 
+ * Responsive Design Yith WooCommerce Zoom Magnifier CSS Rules
+ * Created by CMSMasters
+ * 
+ */
+@media only screen {
+  /*-------------------------------------------------------------------------*/
+  /*	Small Tablet Monitor
+	/*-------------------------------------------------------------------------*/
+}
+@media only screen and (max-width: 768px) {
+  .pp_woocommerce .pp_content_container .pp_close {
+    right: 0;
+    top: -22px;
+  }
+  #page .cmsmasters_single_product .yith_magnifier_zoom_magnifier,
+  #page .cmsmasters_single_product .yith_magnifier_mousetrap,
+  #page .cmsmasters_single_product .yith_magnifier_loading {
+    display: none !important;
+  }
+  .yith_magnifier_lens {
+    border: none !important;
+  }
+}

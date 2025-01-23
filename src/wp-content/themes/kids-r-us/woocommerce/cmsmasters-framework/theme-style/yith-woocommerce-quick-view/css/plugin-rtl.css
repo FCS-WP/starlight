@@ -1,0 +1,402 @@
+﻿/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.0
+ * 
+ * Yith WooCommerce Quick View RTL Rules
+ * Created by CMSMasters
+ * 
+ */
+
+
+body {
+	unicode-bidi: embed;
+	direction: rtl;
+}
+
+li.product .cmsmasters_product .cmsmasters_quick_view_button.cmsmasters_theme_icon_quick_view:before {
+	content: '\e837'; /* Check this rule! */
+}
+
+li.product .cmsmasters_product .cmsmasters_quick_view_button .blockUI.blockOverlay {
+	background-image: url(../img/loader.gif); /* Check this rule and write correct image url, or remove this rule! */
+}
+
+li.product .cmsmasters_product .yith-wcqv-button.inside-thumb {
+	left: auto;
+	right: 0;
+}
+
+li.product .cmsmasters_product .yith-wcqv-button.inside-thumb:emty:before {
+	content: '\e837'; /* Check this rule! */
+}
+
+li.product .cmsmasters_product .yith-wcqv-button.inside-thumb .blockUI.blockOverlay {
+	background-image: url(../img/loader.gif); /* Check this rule and write correct image url, or remove this rule! */
+}
+
+html #yith-quick-view-modal .cmsmasters_add_wishlist_button span {
+	padding-right: 10px;
+}
+
+html #yith-quick-view-modal .cmsmasters_add_wishlist_button .show {
+	text-align: right;
+}
+
+html #yith-quick-view-modal .yith-wcqv-head #yith-quick-view-close {
+	right: auto;
+	left: -15px;
+}
+
+html #yith-quick-view-modal .yith-wcqv-head #yith-quick-view-close:before {
+	left: 0;
+	right: 0;
+}
+
+html #yith-quick-view-modal .yith-wcqv-head #yith-quick-view-close:after {
+	left: 0;
+	right: 0;
+}
+
+html #yith-quick-view-modal .single-product > .product > .product > div {
+	float: right;
+}
+
+html #yith-quick-view-modal .single-product > .product > .product > div.images {
+	padding-left: 55px;
+	padding-right: 0;
+}
+
+html #yith-quick-view-modal .single-product .onsale {
+	left: auto;
+	right: 10px;
+}
+
+html #yith-quick-view-modal .single-product div.summary a.reset_variations {
+	margin-right: 10px;
+}
+
+html #yith-quick-view-modal .single-product div.summary .cmsmasters_product_title_info_wrap {
+	text-align: right;
+}
+
+html #yith-quick-view-modal .single-product div.summary .cmsmasters_product_title_info_wrap > * {
+	text-align: right;
+}
+
+html #yith-quick-view-modal .single-product div.summary .cmsmasters_product_title_info_wrap .cmsmasters_star_rating_wrap {
+	text-align: right;
+}
+
+html #yith-quick-view-modal .single-product div.summary .price ins {
+	float: right;
+	margin-left: 5px;
+}
+
+html #yith-quick-view-modal .single-product div.summary .cmsmasters_product_content {
+	text-align: center;
+}
+
+html #yith-quick-view-modal .single-product div.summary .cmsmasters_product_content > div {
+	text-align: right;
+}
+
+html #yith-quick-view-modal .single-product div.summary .cart:after {
+	content: '.'; /* Check this rule! */
+}
+
+html #yith-quick-view-modal .single-product div.summary .cart .quantity input[type=number]::-webkit-inner-spin-button {
+	border-right-width: 1px;
+	border-right-style: solid;
+}
+
+html #yith-quick-view-modal .single-product div.summary .cart .single_add_to_cart_button {
+	margin-left: 0;
+	margin-right: -4px;
+}
+
+html #yith-quick-view-modal .single-product div.summary .share_posts_inner {
+	text-align: right;
+}
+
+html .yith-quick-view.yith-modal .yith-wcqv-head {
+	right: auto;
+	left: auto;
+}
+
+html .yith-quick-view.yith-modal .yith-wcqv-head .yith-quick-view-close {
+	right: auto;
+	left: -15px;
+}
+
+html .yith-quick-view.yith-modal .yith-wcqv-head .yith-quick-view-close:before {
+	left: 0;
+	right: 0;
+}
+
+html .yith-quick-view.yith-modal .yith-wcqv-head .yith-quick-view-close:after {
+	left: 0;
+	right: 0;
+}
+
+html .yith-quick-view.yith-modal .single-product > .product > .product > div {
+	float: right;
+}
+
+html .yith-quick-view.yith-modal .single-product > .product > .product > div .images {
+	padding-right: 50px;
+	padding-left: 0;
+}
+
+html .yith-quick-view.yith-modal .single-product > .product > .product > div .images .yith-quick-view-thumbs {
+	left: auto;
+	right: 10px;
+}
+
+html .yith-quick-view.yith-modal .single-product > .product > .product > div .images .yith-quick-view-thumbs .yith-quick-view-single-thumb {
+	margin-left: 5px;
+	margin-right: 0;
+}
+
+html .yith-quick-view.yith-modal .single-product > .product > .product > div.summary .summary-content {
+	padding-left: 20px;
+	padding-right: 0;
+	float: left;
+	text-align: right;
+}
+
+html .yith-quick-view.yith-modal .single-product > .product > .product > div.summary .summary-content .stock {
+	left: auto;
+	right: 0;
+}
+
+html .yith-quick-view.yith-modal .single-product > .product > .product > div.summary .summary-content .cmsmasters_add_wishlist_button span {
+	padding-right: 10px;
+}
+
+html .yith-quick-view.yith-modal .single-product > .product > .product > div.summary .summary-content .cmsmasters_add_wishlist_button .show {
+	text-align: right;
+}
+
+html .yith-quick-view.yith-modal .single-product div.summary .onsale {
+	margin-left: 40px;
+	margin-right: 0;
+	right: auto;
+	left: 49%;
+}
+
+html .yith-quick-view.yith-modal .single-product div.summary .cmsmasters_product_title_info_wrap {
+	text-align: right;
+}
+
+html .yith-quick-view.yith-modal .single-product div.summary .cmsmasters_product_title_info_wrap > * {
+	text-align: right;
+}
+
+html .yith-quick-view.yith-modal .single-product div.summary .cmsmasters_product_title_info_wrap .cmsmasters_star_rating_wrap {
+	text-align: right;
+}
+
+html .yith-quick-view.yith-modal .single-product div.summary .share_posts_inner {
+	text-align: right;
+}
+
+html .yith-quick-view.yith-modal .single-product div.summary .price:after {
+	content: '.'; /* Check this rule! */
+}
+
+html .yith-quick-view.yith-modal .single-product div.summary .price del {
+	margin-left: 0;
+	margin-right: 3px;
+}
+
+html .yith-quick-view.yith-modal .single-product div.summary .price ins {
+	float: right;
+	margin-left: 5px;
+}
+
+html .yith-quick-view.yith-modal .single-product div.summary .cmsmasters_product_content {
+	text-align: center;
+}
+
+html .yith-quick-view.yith-modal .single-product div.summary .cmsmasters_product_content > div {
+	text-align: right;
+}
+
+html .yith-quick-view.yith-modal .single-product div.summary .cart:after {
+	content: '.'; /* Check this rule! */
+}
+
+html .yith-quick-view.yith-modal .single-product div.summary .cart .quantity input:not([type=submit]):not([type=button]):not([type=radio]):not([type=checkbox]) {
+	padding-left: 0;
+}
+
+html .yith-quick-view.yith-modal .single-product div.summary .cart .quantity input[type=number]::-webkit-inner-spin-button {
+	border-right-width: 1px;
+	border-right-style: solid;
+}
+
+html .yith-quick-view.yith-modal .single-product div.summary .cart .quantity + .single_add_to_cart_button,
+html .yith-quick-view.yith-modal .single-product div.summary .cart .quantity + input + .single_add_to_cart_button {
+	margin-left: 0;
+	margin-right: -4px;
+}
+
+html .yith-quick-view.yith-modal .single-product div.summary table.variations {
+	padding-left: 0;
+}
+
+html .yith-quick-view.yith-inline .yith-wcqv-main {
+	padding-left: 0;
+	padding-right: 20px;
+}
+
+html .yith-quick-view.yith-inline .yith-wcqv-main .yith-wcqv-head .yith-quick-view-close {
+	right: auto;
+	left: -15px;
+}
+
+html .yith-quick-view.yith-inline .yith-wcqv-main .yith-wcqv-head .yith-quick-view-close:before {
+	left: 0;
+	right: 0;
+}
+
+html .yith-quick-view.yith-inline .yith-wcqv-main .yith-wcqv-head .yith-quick-view-close:after {
+	left: 0;
+	right: 0;
+}
+
+html .yith-quick-view.yith-inline .single-product > .product > .product .onsale {
+	margin-left: 40px;
+	margin-right: 0;
+	left: auto;
+	right: 30px;
+}
+
+html .yith-quick-view.yith-inline .single-product > .product > .product > div {
+	float: right;
+}
+
+html .yith-quick-view.yith-inline .single-product > .product > .product > div .images {
+	padding-left: 50px;
+	padding-right: 0;
+}
+
+html .yith-quick-view.yith-inline .single-product > .product > .product > div .images .yith_magnifier_zoom_wrap .yith_magnifier_mousetrap .yith_expand {
+	left: auto;
+	right: 0;
+}
+
+html .yith-quick-view.yith-inline .single-product > .product > .product > div .images .yith-quick-view-thumbs {
+	left: auto;
+	right: 10px;
+}
+
+html .yith-quick-view.yith-inline .single-product > .product > .product > div .images .yith-quick-view-thumbs .yith-quick-view-single-thumb {
+	margin-left: 5px;
+	margin-right: 0;
+}
+
+html .yith-quick-view.yith-inline .single-product > .product > .product > div.summary .summary-content {
+	padding-left: 20px;
+	padding-right: 0;
+	float: left;
+	text-align: right;
+}
+
+html .yith-quick-view.yith-inline .single-product > .product > .product > div.summary .summary-content .stock {
+	left: auto;
+	right: 0;
+}
+
+html .yith-quick-view.yith-inline .single-product > .product > .product > div.summary .summary-content .cmsmasters_add_wishlist_button span {
+	padding-right: 10px;
+}
+
+html .yith-quick-view.yith-inline .single-product > .product > .product > div.summary .summary-content .cmsmasters_add_wishlist_button .show {
+	text-align: right;
+}
+
+html .yith-quick-view.yith-inline .single-product div.summary .cmsmasters_product_title_info_wrap {
+	text-align: right;
+}
+
+html .yith-quick-view.yith-inline .single-product div.summary .cmsmasters_product_title_info_wrap > * {
+	text-align: right;
+}
+
+html .yith-quick-view.yith-inline .single-product div.summary .cmsmasters_product_title_info_wrap .cmsmasters_star_rating_wrap {
+	text-align: right;
+}
+
+html .yith-quick-view.yith-inline .single-product div.summary .price:after {
+	content: '.'; /* Check this rule! */
+}
+
+html .yith-quick-view.yith-inline .single-product div.summary .price del {
+	margin-left: 0;
+	margin-right: 3px;
+	float: left;
+}
+
+html .yith-quick-view.yith-inline .single-product div.summary .price ins {
+	float: right;
+	margin-left: 5px;
+}
+
+html .yith-quick-view.yith-inline .single-product div.summary .cmsmasters_product_content {
+	text-align: center;
+}
+
+html .yith-quick-view.yith-inline .single-product div.summary .cmsmasters_product_content > div {
+	text-align: right;
+}
+
+html .yith-quick-view.yith-inline .single-product div.summary .cart:after {
+	content: '.'; /* Check this rule! */
+}
+
+html .yith-quick-view.yith-inline .single-product div.summary .cart .quantity input:not([type=submit]):not([type=button]):not([type=radio]):not([type=checkbox]) {
+	padding-left: 0;
+}
+
+html .yith-quick-view.yith-inline .single-product div.summary .cart .quantity input[type=number]::-webkit-inner-spin-button {
+	border-right-width: 1px;
+	border-right-style: solid;
+}
+
+html .yith-quick-view.yith-inline .single-product div.summary .cart .quantity + input + .single_add_to_cart_button {
+	margin-left: 0;
+	margin-right: 17px;
+}
+
+html .yith-quick-view.yith-inline .single-product div.summary table.variations {
+	padding-left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+html .yith-quick-view.yith-modal .single-product > .product > .product div .images,
+  html .yith-quick-view.yith-inline .single-product > .product > .product div .images {
+	float: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+html .yith-quick-view.yith-modal .single-product div.summary .summary-content,
+  html .yith-quick-view.yith-inline .single-product div.summary .summary-content {
+	float: none;
+}
+
+html .woocommerce .products .product:nth-of-type(2n),
+  html .woocommerce-page .products .product:nth-of-type(2n) {
+	float: right;
+}
+}
+
+@media only screen and (max-width: 540px) {
+html #yith-quick-view-modal .single-product > .product > .product > div.images,
+  html #yith-quick-view-modal .single-product > .product > .product > div.summary {
+	float: none;
+}
+}
+

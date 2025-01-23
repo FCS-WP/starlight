@@ -1,0 +1,56 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.0
+ * 
+ * Yith WooCommerce Popup RTL Rules
+ * Created by CMSMasters
+ * 
+ */
+body {
+	unicode-bidi: embed;
+	direction: rtl;
+}
+
+body .ypop-wrapper {
+	left: auto;
+	right: 50%;
+}
+
+body .ypop-wrapper .ypop-product-wrapper * {
+	text-align: center;
+}
+
+body .ypop-wrapper a.close {
+	right: auto;
+	left: -15px;
+}
+
+body .ypop-wrapper .ypop-header {
+	background-position: center, center; /* Check this rule! */
+}
+
+body .ypop-wrapper .ypop-footer {
+	left: auto;
+	right: 0;
+}
+
+body .ypop-wrapper .ypop-content-type .group .ypop-submit {
+	right: auto;
+	left: 0;
+}
+
+body .ypop-wrapper .share-container {
+	text-align: center;
+}
+
+body .ypop-wrapper .ypop-checkzone {
+	text-align: right;
+}
+
+body .ypop-wrapper .ypop-checkzone span {
+	float: none;
+}
+
+
+

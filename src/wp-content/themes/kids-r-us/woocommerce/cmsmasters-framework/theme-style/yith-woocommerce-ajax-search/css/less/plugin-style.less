@@ -1,0 +1,231 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.0
+ * 
+ * Yith WooCommerce Ajax Search CSS Rules
+ * Created by CMSMasters
+ * 
+ */
+
+
+
+@import "../../../../../../theme-framework/theme-style/css/less/general.less";
+
+
+/* -------------------------------- Start Yith WooCommerce Ajax Search Styles -------------------------------- */
+.cmsmasters_header_search_form {
+	#yith-s {
+		height:@input_height;
+		line-height:@input_height;
+	}
+
+	form {
+		width:100%;
+		height:100%;
+		position:relative;
+	}
+
+	.autocomplete-suggestion {
+		cursor:pointer;
+	}
+
+	.yith-ajaxsearchform-container {
+		padding:0;
+		margin:0;
+		width:100%;
+		height:auto;
+		min-height:90px;
+		position:relative;
+		.display_flex;
+		.flex_direction(column);
+		.justify_content(center);
+		.align_items(center);
+
+		.search_button {
+			left:auto;
+			right:0;
+			top:auto;
+			bottom:0;
+			height:@input_height;
+			line-height:@input_height;
+
+			#yith-searchsubmit {
+				font-size:0;
+
+				&::before {
+					font-size:24px;
+				}
+			}
+		}
+
+		.search_bar_wrap {
+			height:auto;
+			width:100%;
+			max-width:400px;
+			display:block;
+			position:relative;
+			left:0;
+			top:0;
+			.transform (translate(0))!important;
+			
+			.search-navigation.search_field,
+			.search-input-container.search_field {
+				width:100%;
+				overflow:visible;
+			}
+
+			select {
+				display:inline-block;
+				width:49%;
+				background-color:transparent !important;
+				padding-left:0;
+				padding-right:0;
+				.bd(0);
+			}
+		}
+		
+		.screen-reader-text {
+			display:none;
+		}
+		
+		.autocomplete-suggestions {
+			padding:25px 0;
+			top:100%;
+			margin:70px 0 0;
+			width:100% !important;
+			max-width:400px;
+			max-height:315px;
+			overflow:auto; 
+			.bddash;
+		}
+		
+		.link-result {
+			padding:10px 25px;
+			text-align:center;
+			
+			a {
+				.default_button(1);
+			}
+		}
+
+		.autocomplete-suggestion {
+			position:relative;
+			padding:10px 25px;
+			cursor:pointer;
+			.ovh;
+			
+			div.badges {
+				span {
+					padding:4px 10px;
+					margin:3px 0;
+					.bdrs(25px);
+					display:inline-block;
+					margin-right:5px;
+					
+					&:last-child {
+						margin-right:0;
+					}
+				}
+			}
+			
+			.yith_wcas_result_image {
+				&.align-left {
+					max-height:60px;
+					margin-right:20px;
+					.bdrs(50%);
+					.fl;
+					.ovh;	
+				}
+				
+				&.align-right {
+					margin-left:20px;
+					max-height:60px;
+					.bdrs(50%);
+					.ovh;	
+					.fr;
+				}
+			}
+			
+			.yith_wcas_result_content {
+				padding:5px 0 0;
+				margin:0;
+				.ovh;
+				
+				.yith_wcas_result_excerpt {
+					margin-top:10px;
+					
+					&:last-child {
+						padding-bottom:0;
+					}
+				}
+			}
+		}
+	}
+	
+	.yith-ajaxsearchform-wide {
+		.search-input-container {
+			display:block;
+		}
+	}
+}
+
+
+.widget_product_search {
+	z-index:9999;
+}
+
+
+
+/*-------------------------------------------------------------------------*/
+/* Widget
+/*-------------------------------------------------------------------------*/
+.widget.yith_woocommerce_ajax_search {
+	.yith-ajaxsearchform-container {
+		.search_bar_wrap {
+			height:auto;
+			max-width:100%;
+
+			select {
+				margin-bottom:10px;
+			}
+		}
+		
+		.search-input-container,
+		.search_field {
+			@{input_text} {
+				padding-right:67px !important;
+			}
+		}
+		
+		.search_button {
+			height:@input_height;
+			bottom:0;
+			top:auto;
+
+			button {
+				font-size:0;
+			}
+		}
+	}
+}
+
+
+
+
+/*-------------------------------------------------------------------------*/
+/* CSS3 Animations
+/*-------------------------------------------------------------------------*/
+html.csstransitions {
+	.yith-ajaxsearchform-container form div label:before,
+	.autocomplete-suggestion,
+	.autocomplete-suggestion strong,
+	.yith_wcas_result_content .title {
+		.trans(~'color .3s ease-in-out');
+	}
+	
+	.yith-ajaxsearchform-container .link-result a,
+	.yith-ajaxsearchform-container .link-result a:after {
+		.trans(~'all .3s ease-in-out');
+	}
+}

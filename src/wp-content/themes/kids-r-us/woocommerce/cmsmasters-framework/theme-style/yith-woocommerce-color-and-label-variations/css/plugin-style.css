@@ -1,0 +1,58 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.0
+ * 
+ * Yith WooCommerce Color and Label Variations CSS Rules
+ * Created by CMSMasters
+ * 
+ */
+/* -------------------------------- Start Yith WooCommerce Color and Label Variations Styles -------------------------------- */
+/* -------------------------------- Free Version -------------------------------- */
+html body .yith-quick-view-content.woocommerce div.summary table.variations td {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 1;
+}
+html body .select_option_label {
+  border-width: 0;
+  border-style: solid;
+}
+html body .select_option_colorpicker {
+  margin: 0 5px 0 0;
+  border-width: 1px;
+  border-style: solid;
+}
+html body .select_option_colorpicker .yith_wccl_value {
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+  min-height: 18px;
+  border-width: 2px;
+  border-style: solid;
+  text-align: left;
+}
+html body .select_option_colorpicker,
+html body .select_option_colorpicker > span {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* -------------------------------- Premium Version -------------------------------- */
+html body .shop_attributes td .select_box.on_ptab {
+  display: inline-block;
+  vertical-align: middle;
+}
+/*-------------------------------------------------------------------------*/
+/* CSS3 Animations
+/*-------------------------------------------------------------------------*/
+html.csstransitions {
+  /* Custom Animations */
+}
+html.csstransitions body .select_option,
+html.csstransitions body .select_option > span {
+  -webkit-transition: color .3s ease-in-out, border-color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out, border-color .3s ease-in-out;
+  -ms-transition: color .3s ease-in-out, border-color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out, border-color .3s ease-in-out;
+  transition: color .3s ease-in-out, border-color .3s ease-in-out;
+}

@@ -1,0 +1,61 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.0
+ * 
+ * Responsive Design Yith WooCommerce Ajax Search CSS Rules
+ * Created by CMSMasters
+ * 
+ */
+
+
+
+@import "../../../../../../theme-framework/theme-style/css/less/general.less";
+
+
+
+@media only screen {
+	@media @monitor_tablet_small {
+		.cmsmasters_header_search_form {
+			.yith-ajaxsearchform-container {
+				.search_bar_wrap {
+					max-width:90%;
+				}
+			}
+		}
+	}
+	
+
+	@media @monitor_phone  {
+		.cmsmasters_header_search_form {
+			.yith-ajaxsearchform-container {
+				.search_bar_wrap {
+					max-width:90%;
+
+					.search_button {
+						#yith-searchsubmit:before {
+							font-size:22px;
+						}
+					} 
+
+					select {
+						width:100%;
+					}
+			
+					@{input_text} {
+						font-size:22px;
+						width:100%;
+						max-width:100%;
+					}
+				}
+
+				.autocomplete-suggestion {
+					.yith_wcas_result_image {
+						display:none;
+					}
+				} 
+					
+			}
+		}
+	}
+}

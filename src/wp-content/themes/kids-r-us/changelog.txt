@@ -1,0 +1,150 @@
+﻿/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.1.7
+ */
+ 
+-----------------------------------------------------------------------
+				CHANGELOG
+-----------------------------------------------------------------------
+Version 1.1.7:
+	
+	1. Updated WooCommerce templates
+	2. Fixed Color Picker
+	3. Updated plugins
+--------------------------------------
+Version 1.1.6:
+	
+	1. Improved import of demo content
+	2. Fixed social icons warning
+	3. Updated WooCommerce templates
+	4. Updated plugins
+--------------------------------------
+Version 1.1.5:
+
+	1. Fixed Posts Tabs widget checkboxes
+	2. Updated plugins
+--------------------------------------
+Version 1.1.4:
+	
+	1. Fixed an error in the Clients shortcode when an image is not selected
+	2. Fixed warnings when an Appointable product is used
+	3. Updated WooCommerce templates
+	4. Updated plugins
+--------------------------------------
+Version 1.1.3:
+	
+	1. Fixed zoom magnifier
+	2. Updated plugins
+--------------------------------------
+Version 1.1.2:
+	
+	1. Fixed header overlaps by default option
+	2. Fixed twitter
+	3. Fixed pagination in shortcodes
+	4. Updated plugins
+--------------------------------------
+Version 1.1.1:
+	
+	1. Fixed WooCommerce dynamic cart
+	2. Updated WooCommerce templates
+	3. Updated plugins
+--------------------------------------
+Version 1.1.0:
+
+	1. The Events Calendar: Fixed tribe event series
+	2. Added missing argument to "woocommerce_single_product_image_thumbnail_html" filter
+	3. Updated plugins
+	4. Updated WooCommerce template
+--------------------------------------
+Version 1.0.9:
+
+	1. Fix for webp format in jQuery iLightBox
+	2. Fixed apply custom fonts in gutenberg editor.
+	3. Fixed fatal error on PHP 8
+	4. Updated plugins
+	5. Updated translates
+--------------------------------------
+Version 1.0.8:
+
+	1. Fixed pingbacks & trackbacks
+	2. Fixed twitter connection
+	3. Updated plugins
+	4. Updated translates
+	5. Fix for WooCommerce 6.9.0
+--------------------------------------
+Version 1.0.7:
+
+	1. Update Plugins
+--------------------------------------
+Version 1.0.6:
+
+	1. Fixed hover slider script
+	2. Fixed behavior section setting for Posts Slider, Pricing Table and Gallery shortcodes.
+	3. Fixed Wishlist icon
+	4. Update Plugins
+--------------------------------------
+Version 1.0.5:
+
+	1. Added function wp_body_open()
+	2. Fixed jQuery Migrate notices
+	3. Fixed Load More
+	4. Fix for short syntax in js <div />
+	5. Fix iLightbox
+	6. Fix register settings
+	7. Added deprecated function for Flickr widget
+	8. Update isotope js
+	9. Update Plugins
+	10. Update Translate
+	11. Fixed demo content
+--------------------------------------
+Version 1.0.4:
+
+	1. WP 5.6 section and column update fix
+	2. revslider 6.3.3
+--------------------------------------
+Version 1.0.3:
+
+	1. Removed extra space in theme-settings-defaults.php
+	2. Update Woocommerce
+	3. Envato theme check fix
+	4. Yoast SEO breadcrumbs fix
+	5. Classic Editor fix
+	6. PHP 7.4 implode fix
+	7. Gutenberg plugin notices and CC button fixes
+	8. Shop sidebar fix
+	9. WP 5.6 pop-up fix
+	10. WP 5.6 drag&drop fix
+	11. WP 5.6 columns fix
+	11. TGMPA notices fix
+	12. Update isotope
+	13. Update ilightbox
+	14. Update plugins
+--------------------------------------
+Version 1.0.2:
+
+	1. WP 5.5 Color Picker fix
+	2. Removed Form Builder plugin
+	3. LayerSlider 6.11.2
+--------------------------------------
+Version 1.0.1:
+
+	1. Fixed Gutenberg (if open demo-post from Gutenberg plugin)
+	2. Fix for checkbox and radio required (validation boxes)
+	3. Fix for gutenberg post types require
+	4. Add Custom Text Block Paddings for Various Screens - Featured Block
+	5. Fixed  "Columns Custom Height Behavior"
+	6. Add Filter for large dimension for coloumn and row
+	7. hid the size of the images that go to the background of the short code
+	8. Fixed Columns
+	9. Fix bug (WP 5.1<) when fullwidth page during the import are inserted into 'content-wrap'
+	10. Add box shadow option for column
+	11. Add box shadow option for featured block
+	12. Add new repeat option "round"
+	13. Sanitize sender email
+	14. fix image alignment for guttenberg
+	15. Fix fro Woo Stock quantity
+	16. Woo Update
+	17. Fix active Gutenberg styles
+--------------------------------------
+Version 1.0: Release!

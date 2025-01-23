@@ -1,0 +1,219 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.0
+ * 
+ * Yith WooCommerce Ajax Search CSS Rules
+ * Created by CMSMasters
+ * 
+ */
+/* -------------------------------- Start Yith WooCommerce Ajax Search Styles -------------------------------- */
+.cmsmasters_header_search_form #yith-s {
+  height: 52px;
+  line-height: 52px;
+}
+.cmsmasters_header_search_form form {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.cmsmasters_header_search_form .autocomplete-suggestion {
+  cursor: pointer;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  min-height: 90px;
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .search_button {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+  height: 52px;
+  line-height: 52px;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .search_button #yith-searchsubmit {
+  font-size: 0;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .search_button #yith-searchsubmit::before {
+  font-size: 24px;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .search_bar_wrap {
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(0) !important;
+  -moz-transform: translate(0) !important;
+  -ms-transform: translate(0) !important;
+  -o-transform: translate(0) !important;
+  transform: translate(0) !important;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .search_bar_wrap .search-navigation.search_field,
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .search_bar_wrap .search-input-container.search_field {
+  width: 100%;
+  overflow: visible;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .search_bar_wrap select {
+  display: inline-block;
+  width: 49%;
+  background-color: transparent !important;
+  padding-left: 0;
+  padding-right: 0;
+  border-width: 0;
+  border-style: solid;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .screen-reader-text {
+  display: none;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .autocomplete-suggestions {
+  padding: 25px 0;
+  top: 100%;
+  margin: 70px 0 0;
+  width: 100% !important;
+  max-width: 400px;
+  max-height: 315px;
+  overflow: auto;
+  border-width: 1px;
+  border-style: dashed;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .link-result {
+  padding: 10px 25px;
+  text-align: center;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .link-result a {
+  display: inline-block;
+  padding: 0 42px;
+  white-space: nowrap;
+  position: relative;
+  border-width: 0;
+  border-style: solid;
+  text-align: center;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .link-result a:after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  top: 6px;
+  bottom: 6px;
+  opacity: 1;
+  border-width: 2px;
+  border-style: dashed;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .autocomplete-suggestion {
+  position: relative;
+  padding: 10px 25px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .autocomplete-suggestion div.badges span {
+  padding: 4px 10px;
+  margin: 3px 0;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .autocomplete-suggestion div.badges span:last-child {
+  margin-right: 0;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .autocomplete-suggestion .yith_wcas_result_image.align-left {
+  max-height: 60px;
+  margin-right: 20px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+  overflow: hidden;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .autocomplete-suggestion .yith_wcas_result_image.align-right {
+  margin-left: 20px;
+  max-height: 60px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  float: right;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .autocomplete-suggestion .yith_wcas_result_content {
+  padding: 5px 0 0;
+  margin: 0;
+  overflow: hidden;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .autocomplete-suggestion .yith_wcas_result_content .yith_wcas_result_excerpt {
+  margin-top: 10px;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-container .autocomplete-suggestion .yith_wcas_result_content .yith_wcas_result_excerpt:last-child {
+  padding-bottom: 0;
+}
+.cmsmasters_header_search_form .yith-ajaxsearchform-wide .search-input-container {
+  display: block;
+}
+.widget_product_search {
+  z-index: 9999;
+}
+/*-------------------------------------------------------------------------*/
+/* Widget
+/*-------------------------------------------------------------------------*/
+.widget.yith_woocommerce_ajax_search .yith-ajaxsearchform-container .search_bar_wrap {
+  height: auto;
+  max-width: 100%;
+}
+.widget.yith_woocommerce_ajax_search .yith-ajaxsearchform-container .search_bar_wrap select {
+  margin-bottom: 10px;
+}
+.widget.yith_woocommerce_ajax_search .yith-ajaxsearchform-container .search-input-container input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=image]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=color]):not([type=range]),
+.widget.yith_woocommerce_ajax_search .yith-ajaxsearchform-container .search_field input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=image]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=color]):not([type=range]) {
+  padding-right: 67px !important;
+}
+.widget.yith_woocommerce_ajax_search .yith-ajaxsearchform-container .search_button {
+  height: 52px;
+  bottom: 0;
+  top: auto;
+}
+.widget.yith_woocommerce_ajax_search .yith-ajaxsearchform-container .search_button button {
+  font-size: 0;
+}
+/*-------------------------------------------------------------------------*/
+/* CSS3 Animations
+/*-------------------------------------------------------------------------*/
+html.csstransitions .yith-ajaxsearchform-container form div label:before,
+html.csstransitions .autocomplete-suggestion,
+html.csstransitions .autocomplete-suggestion strong,
+html.csstransitions .yith_wcas_result_content .title {
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  -ms-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+html.csstransitions .yith-ajaxsearchform-container .link-result a,
+html.csstransitions .yith-ajaxsearchform-container .link-result a:after {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}

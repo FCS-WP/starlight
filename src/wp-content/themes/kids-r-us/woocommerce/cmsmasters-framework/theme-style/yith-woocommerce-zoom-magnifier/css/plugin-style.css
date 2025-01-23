@@ -1,0 +1,152 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.0
+ * 
+ * Yith WooCommerce Zoom Magnifier CSS Rules
+ * Created by CMSMasters
+ * 
+ */
+/* -------------------------------- Start Yith WooCommerce Zoom Magnifier Styles -------------------------------- */
+.yith_magnifier_loading {
+  width: 100% !important;
+}
+/*-------------------------------------------------------------------------*/
+/*	Single Product */
+/*-------------------------------------------------------------------------*/
+/***************** Single Product Thumbnail Slider ******************/
+.cmsmasters_product_left_column .caroufredsel_wrapper {
+  height: auto !important;
+  position: relative !important;
+}
+.cmsmasters_product_left_column .yith_magnifier_gallery {
+  height: auto !important;
+  position: relative !important;
+  margin: 0 -5px;
+}
+.cmsmasters_product_left_column .yith_magnifier_gallery li {
+  display: inline-block;
+  margin: 10px 5px 0;
+  padding: 0;
+  float: none;
+}
+.cmsmasters_product_left_column .yith_magnifier_gallery li.first {
+  margin: 10px 5px 0 !important;
+}
+.cmsmasters_product_left_column .yith_magnifier_gallery li.last {
+  margin: 10px 5px 0 !important;
+}
+.cmsmasters_product_left_column .yith_magnifier_gallery li:before {
+  content: none;
+}
+.cmsmasters_product_left_column .yith_magnifier_gallery li img {
+  width: 100%;
+}
+.cmsmasters_product_left_column .yith_magnifier_gallery li a {
+  margin: 0;
+  text-align: center;
+}
+.cmsmasters_product_left_column .yith_magnifier_zoom_magnifier {
+  border-width: 0;
+  border-style: solid;
+}
+.cmsmasters_product_left_column .images {
+  text-align: center;
+}
+.cmsmasters_product_left_column .images.right .yith_magnifier_zoom_magnifier {
+  margin: 0 0 0 60px;
+}
+.cmsmasters_product_left_column .images .yith_magnifier_zoom_wrap {
+  text-align: center;
+}
+/***************** Single Product Thumbnail Slider Button ******************/
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-prev,
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-next {
+  font-size: 20px;
+  background-image: none;
+  width: 22px;
+  height: 43px;
+  margin: auto !important;
+  top: 10px;
+  bottom: 0;
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+  opacity: 0;
+}
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-prev:before,
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-next:before {
+  font-family: 'fontello';
+  line-height: 1em;
+  width: 1em;
+  height: 1em;
+  margin: auto !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-prev {
+  left: 5px;
+  right: auto;
+}
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-prev:before {
+  content: '\eb21';
+}
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-next {
+  left: auto;
+  right: 5px;
+}
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-next:before {
+  content: '\eb22';
+}
+.single-product.woocommerce .cmsmasters_single_product .thumbnails:hover #slider-prev,
+.single-product.woocommerce .cmsmasters_single_product .thumbnails:hover #slider-next {
+  opacity: 1;
+}
+/***************** Popup ******************/
+body div.pp_woocommerce .pp_content_container {
+  padding: 20px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+body div.pp_woocommerce .pp_content_container .pp_close {
+  text-shadow: none !important;
+}
+body div.pp_woocommerce .pp_content_container .pp_right {
+  padding-right: 20px;
+}
+body div.pp_woocommerce .pp_content_container .pp_left {
+  padding-left: 20px;
+}
+body div.pp_woocommerce .pp_content_container .pp_content {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: auto !important;
+  margin: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+body div.pp_woocommerce .pp_content_container .pp_details {
+  padding: 0;
+}
+/*-------------------------------------------------------------------------*/
+/*	CSS3 Animations	*/
+/*-------------------------------------------------------------------------*/
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-prev,
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-next {
+  -webkit-transition: color .3s ease-in-out, opacity .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out, opacity .3s ease-in-out;
+  -ms-transition: color .3s ease-in-out, opacity .3s ease-in-out;
+  -o-transition: color .3s ease-in-out, opacity .3s ease-in-out;
+  transition: color .3s ease-in-out, opacity .3s ease-in-out;
+}

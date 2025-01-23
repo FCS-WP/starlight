@@ -1,0 +1,834 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.6
+ * 
+ * Yith WooCommerce Wishlist CSS Rules
+ * Created by CMSMasters
+ * 
+ */
+
+
+
+@import "../../../../../../theme-framework/theme-style/css/less/general.less";
+
+@preloader_product_page_pad:100%;
+
+
+/* -------------------------------- Start Yith WooCommerce Wishlist Styles -------------------------------- */
+
+
+/*-------------------------------------------------------------------------*/
+/*	Wishlist icon in Header */
+/*-------------------------------------------------------------------------*/
+
+.cmsmasters_wishlist_wrap {
+	position:relative;
+	
+	> a {
+		display:block;
+		
+		> span {
+			display:inline-block;
+			vertical-align:middle;
+			position:relative;
+		}
+		
+		&:before {
+			position:relative;
+			margin:0;
+			font-size:18px;
+			font-weight:medium;
+			vertical-align:middle;
+		}
+		
+		&:after {
+			.valign_after;
+		}
+	}
+}
+
+
+/*-------------------------------------------------------------------------*/
+/*	Free Version */
+/*-------------------------------------------------------------------------*/
+
+/***************** Button Wishlist In Product ******************/
+.products {
+	.product {
+		.cmsmasters_product_add_inner {
+			.cmsmasters_add_wishlist_button {
+				width:42px;
+				height:42px;
+				margin:0;
+				padding:0;
+				position:absolute;
+				right:10px;
+				top:0;
+				
+				.cmsmasters_product_category_shortcode.puzzle & {
+					right:0;
+				}
+				
+				+ a,
+				+ a.added + a {
+					margin-right:43px;
+				}
+				
+				a {
+					width:100%;
+					height:100%;
+					padding:0;
+					
+					&:before {
+						font-size:16px;
+						line-height:1.1em;
+						.pos_abs(1.1em, 1.1em, 0, 0, 2px);
+					}
+					
+					&.add_to_wishlist {
+						z-index:2;
+						padding:0;
+						
+						&.button {
+							&:after {
+								content:none;
+							}
+						}
+					}
+				}
+				
+				.yith-wcwl-add-button {
+					img {
+						z-index:2;
+					}
+				}
+			}
+		}
+	}
+}
+
+#page .cmsmasters_add_wishlist_button {
+	.ajax-loading {
+		display:none;
+	}
+}
+
+
+/***************** Button Wishlist In Open Product ******************/
+.yith-wcwl-add-to-wishlist {
+	position:relative;
+	margin-top:25px;
+	
+	.yith-wcwl-add-button {
+		a.add_to_wishlist {
+			text-transform:none;
+			line-height:1em;
+			.bdrs(0);
+			
+			&.button {
+				padding:0;
+				outline:0;
+				background:inherit;
+				text-transform:none;
+				line-height:1em;
+				
+				&:after {
+					content:none;
+				}
+				
+				&:before {
+					content:'\e838';
+					font-family:'fontello-custom';
+					font-size:16px;
+					margin:0 4px 0 0; 
+					position:relative;
+					font-weight:400;
+				}
+				
+				i {
+					float:right;
+					margin:0 0 0 10px;
+				}
+			}
+		}
+	}
+	
+	.yith-wcwl-wishlistexistsbrowse {
+		span + a {
+			margin:0 0 0 5px;
+		}
+	}
+}
+
+.thumbnails  + .yith-wcwl-add-to-wishlist,
+.cmsmasters_woo_tabs  + .yith-wcwl-add-to-wishlist {
+	margin:30px 0 0;
+}
+
+
+/***************** Wishlist Table ******************/
+#yith-wcwl-form {
+	h2  {
+		margin-bottom:30px;
+	}
+	
+	&.woocommerce {
+		table.wishlist_table {
+			margin:0 0 50px;
+			font-size:inherit;
+			.bddash;
+			.bdb(0);
+			
+			thead {
+				th {
+					padding:18px 0;
+					position:relative;
+					.bd(0);
+					
+					&.product-name {
+						padding-left:25px;
+						display:block;
+					}	
+				}
+			}
+			
+			tbody {
+				
+				tr {
+					&:first-child {
+						td {
+							.bdt(1px; dashed);
+						}
+					}
+				}
+				
+				td {
+					padding:10px 0;
+					.tal;
+					.bdr(0);
+					.bdl(0);
+
+					&.product-remove {
+						div {
+							.tac;
+						}
+					}
+					
+					&.product-checkbox {
+						padding-left:20px;
+					}
+					
+					.product-thumbnail {
+						img {
+							width:50px;
+							.bdrs(50%);
+						}
+					}
+					
+					&.product-name {
+						padding-left:25px;
+						
+						a {
+							display:inline-block;
+							vertical-align:middle;
+							position:relative;
+							
+							&.yith-wcqv-button {
+								display:none;
+							}
+							
+							&:not([class]) + .yith-wcqv-button {
+								margin:0 0 0 20px;
+							}
+						}
+					}
+					
+					&.product-price {
+						ins,
+						del {
+							display:inline-block;
+							vertical-align:middle;
+							text-decoration:none;
+						}
+						
+						del {
+							text-decoration:line-through;
+						}
+					}
+					
+					&.product-add-to-cart {
+						.tar;
+						
+						.dateadded {
+							padding:10px 0;
+						}
+						
+						#page & {
+							> * {
+								display:block;
+								.tar;
+								.bdrs(0);
+								.bd(0);
+							}
+						}
+					}
+				}
+			}
+
+			tfoot {
+				tr {
+					.bd(0);
+				}
+
+				td {
+					padding:0;
+					margin:0 -1px;
+					.bdr(0);
+					.bdl(0);
+					
+					.ask-an-estimate-button-container {
+						.fr;
+						
+						.button {
+							padding-left:42px;
+							padding-right:42px;
+							.bdrs(0);
+						}
+					}
+					
+					.yith-wcwl-share {
+						padding:20px 25px;
+						margin:0;
+					}
+					
+					.yith-wcwl-share-title {
+						display:inline-block;
+						margin:0;
+						vertical-align:middle;
+						
+						+ ul {
+							margin:0 0 0 25px;
+						}
+					}
+					
+					ul {
+						display:inline-block;
+						height:auto;
+						margin:0;
+						vertical-align:middle;
+						
+						li {
+							display:inline-block;
+							margin:0;
+							padding:0;
+							vertical-align:middle;
+							.tac;
+							
+							&:before {
+								content:none;
+							}
+							
+							a {
+								background-image:none;
+								width: 25px;
+								height: 25px;
+								.tac;
+								
+								&:before {
+									font-family:'fontello';
+									line-height:1em;
+									font-size: 18px;
+									.pos_abs();
+								}
+								
+								&.facebook:before {
+									content:'\ea58';
+								}
+								
+								&.twitter:before {
+									content:'\ea97';
+								}
+								
+								&.pinterest:before {
+									content:'\ea7b';
+								}
+								
+								&.googleplus:before {
+									content:'\ea64';
+								}
+								
+								&.email:before {
+									content:'\e8a5';
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*-------------------------------------------------------------------------*/
+/*	Premium Version */
+/*-------------------------------------------------------------------------*/
+
+/***************** Wishlist Table ******************/
+#yith-wcwl-form {
+	&.woocommerce {
+		table.wishlist_table {
+			tbody {
+				td {
+					&.product-checkbox {
+						&:after {
+							content:'';
+							display:table-cell;
+							height:100%;
+							vertical-align:middle;
+						}
+						
+						input {
+							display:inline-block;
+							vertical-align:middle;
+						}
+					}
+
+					&.wishlist-empty {
+						padding:40px 20px;
+					}
+					
+					&.product-add-to-cart {
+						padding-right:35px;
+						 
+						> a {
+							margin:0;
+							padding:10px 0;
+							outline:none;
+							
+							&.button {
+								&:after {
+									content:none;
+								}
+							}
+							
+							&:last-child {
+								display:block !important;
+								width:auto;
+							}
+							
+							&.selectBox {
+								padding:10px 30px 10px 10px;
+								display:inline-block !important;
+								margin:10px 0;
+								max-width:200px !important;
+								.bddash !important;
+								
+								> span {
+									padding:4px 8px 2px;
+									display:block;
+									.tal;
+								}
+							}
+						}
+						
+						select {
+							padding:0 30px 0 10px;
+							margin:10px 20px 10px 0 !important;
+							.bddash !important;
+						}
+						
+						.variations_form .variations {							
+							> .select_box {
+								width:100%;
+								padding:10px 0; 
+								.tar;
+								
+								.select_option {
+									display:inline-block;
+									vertical-align:middle;
+									float:none;
+								}
+							}
+							
+							> select:not(.select_box) {
+								.dn;
+							}
+						}
+					}					
+				}
+			}
+			
+			tfoot {
+				td {
+					.custom-add-to-cart-button-cotaniner, 
+					.ask-an-estimate-button-container {
+						margin:0 0 20px 20px;
+						.fl;
+					}
+					
+					.yith-wcwl-share {
+						.cl;
+					}
+				}
+			}
+			
+			.thumbnail img {
+				width:50px;
+				.bdrs(50%);
+			}
+		}
+	}
+}
+
+
+/***************** Create New Wishlist ******************/
+
+.selectBox-dropdown-menu {
+	.bddash;
+	
+	> li {
+		&:before {
+			content:'';
+			display:none;
+		}
+	}
+}
+			
+#yith-wcwl-form {
+	.yith-wcwl-wishlist-new {
+		margin:0 0 55px;
+		padding:20px 0;
+		max-width:50%;
+		
+		label {
+			display:block;
+			margin:0;
+		}
+		
+		select {
+			height:@input_height;
+			.bddash;
+		}
+		
+		input[type="text"] {
+			margin:8px 20px 0 0;
+			padding:0 20px; 
+			.bdrs(0);
+		}
+		
+		.selectBox {
+			margin:10px 0 0;
+			height:@input_height;
+			width:100% !important;
+			.bddash !important;
+			.bdrs(0);
+		
+			span {
+				height:@input_height;
+				line-height:@input_height;
+				padding:0 20px;
+				width:100% !important;
+				
+				&.selectBox-arrow {
+					padding:0;
+					width:25px !important;
+				}
+			}
+		}
+		
+		button {
+			display:block;
+			margin:20px 0;
+			padding:15px 42px;
+			.bdrs(0);
+			.bd(0);
+			
+			i {
+				margin:0;
+				
+				&:before {
+					margin:0 10px 0 0;
+				}
+			}
+		}
+	}
+	
+	.wishlist-page-links {
+		padding-top:30px;
+	}
+}
+
+
+/***************** Manage Wishlist ******************/
+#yith-wcwl-form {
+	.wishlist_manage_table {
+		.bdt(1px; dashed);
+		.bdb(1px; dashed);
+		
+		.selectBox {
+			height:@input_height;
+			padding:@input_pad; 
+			.bddash !important;
+			.bdrs(0);
+			
+			span {
+				height:100%;
+				padding:0; 
+			}
+		} 
+		
+		td,
+		th {
+			padding:18px 15px;
+		}
+		
+		thead {
+			th {
+				padding:17px 15px;
+				.bdt(0);
+			}
+		}
+		
+		tfoot {
+			td {
+				.bdb(0);
+			}
+			
+			.button,
+			button {
+				padding-top:0;
+				padding-bottom:0;
+				.fl;
+				.bdrs(0);
+				.bd(0);
+				
+				i {
+					margin:0;
+					
+					&:before {
+						margin:0 10px 0 0;
+					}
+				}
+			}
+			
+			.button + button {
+				margin:0 0 0 20px;
+			}
+		}
+	}
+}
+
+
+/***************** Search Wishlist ******************/
+#yith-wcwl-form {
+	.yith-wcwl-wishlist-search-form {
+		margin:0 0 20px;
+		padding:0;
+		position:relative;
+		width:50%;
+		display:inline-block;
+		.tac;
+		.ovh;
+		.bd(0);
+		
+		#wishlist_search {
+			float:none;
+			height:@input_height;
+			display:block;
+			padding:0 148px 0 20px;
+			.bddash;
+			.bdrs(0);
+		}
+		
+		.wishlist-search-button {
+			float:none;
+			margin:0;
+			padding:15px 42px;
+			position:absolute;
+			right:0;
+			top:0;
+			bottom:auto;
+			.bdrs(0);
+			.bd(0);
+			
+			&:hover {
+				background-color:transparent;	
+			}
+			
+			i {
+				margin:0;
+				
+				&:before {
+					margin:0 10px 0 0;
+				}
+			}
+		}
+	}
+	
+	.yith-wcwl-empty-search-result {
+		padding:20px 0 50px 0;
+		.tal !important;
+	}
+}
+
+
+body div.pp_woocommerce {
+	
+}
+/***************** Wishlist Popup ******************/
+div.pp_overlay {
+	max-height:5790px !important
+}
+
+body div.pp_woocommerce {
+	.pp_close {
+		text-shadow:none !important;
+		.bxsh_none !important;
+		
+		&:before {
+			width:24px;
+			height:24px;
+			.bdrs(50%);
+		}
+		
+		&:hover {
+			background-color:transparent;
+		}
+	}	
+	
+	.pp_content_container {
+		padding:20px 0;
+		.bdrs(0);
+		.bxsh_none;
+		
+		.pp_right {
+			padding-right:20px;
+		}
+		
+		.pp_left {
+			padding-left:20px;
+		}
+		
+		.pp_content {
+			overflow-y:auto;
+			overflow-x:hidden;
+			height:auto !important;
+			margin:0;
+			.display_flex;
+			.align_items(center);
+		}
+		
+		.pp_details {
+			padding:0;
+		}
+	}
+}
+
+.wishlist-ask-an-estimate-popup {
+	position:relative;
+	.ovh;
+	
+	label {
+		display:block;
+		margin:0 0 8px;
+	}
+	
+	textarea {
+		display:block;
+		width:100%;
+		margin:0 0 20px;
+	}
+	
+	.ask-an-estimate-button-popup {
+		display:block;
+		margin:0 !important;
+		.fl;
+		
+		i:before {
+			margin:0 10px 0 0;
+		}
+	}
+}
+
+.yes-js {
+	.pp_woocommerce {
+		.yith-wcwl-popup-content {
+			.yith-wcwl-wishlist-select-container,
+			.yith-wcwl-visibility {
+				display:block;
+				.bd(0);
+				
+				select {
+					height:@input_height;
+					margin-top:20px;
+					font-weight:inherit;
+					.bdrs(0);
+					.bddash;
+				}
+			}
+			
+			.yith-wcwl-popup-new {
+				display:block;
+				.tal;
+				
+				input {
+					height:@input_height;
+					.bdrs(0);
+				}
+			}
+		}
+		
+		.yith-wcwl-popup-footer {
+			> .yith-wcwl-popup-button {
+				> .popup_button {
+					margin:0 10px 0 0;
+					.fl;
+					.bdrs(0);
+				}
+			}
+		}
+	}
+}
+
+#yith-wcwl-popup-message {
+	display:none !important;
+}
+
+/***************** Wishlist Button Open Popup ******************/
+.button_to_cart_wrap {
+	.cmsmasters_add_wishlist_button {
+		.add_to_wishlist {
+			outline:none;
+			background-color:inherit;
+			padding:5px;
+			line-height:1em;
+			
+			&:before {
+				font-size:16px;	
+			}
+		}
+	}
+}
+
+
+/***************** Wishlist Widget ******************/
+#page .widget.widget_yith-wcwl-lists {
+	ul {
+		padding:0;
+		margin:0;
+		
+		li {
+			padding:0;
+			
+			&:before {
+				content:none;
+			}
+			
+			> a {
+				padding:8px 2px 8px 0;
+			}
+		}
+	}
+}

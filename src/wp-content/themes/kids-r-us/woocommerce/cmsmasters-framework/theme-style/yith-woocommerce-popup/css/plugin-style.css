@@ -1,0 +1,137 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.0
+ * 
+ * Yith WooCommerce Popup CSS Rules
+ * Created by CMSMasters
+ * 
+ */
+/* -------------------------------- Start Yith WooCommerce Popup Theme 1 Styles -------------------------------- */
+body .ypop-modal.open {
+  overflow: hidden;
+}
+body .ypop-wrapper {
+  padding: 0;
+  overflow: visible !important;
+}
+body .ypop-wrapper .ypop-product-wrapper * {
+  text-align: center;
+}
+body .ypop-wrapper a.close {
+  top: -15px;
+  right: -15px;
+}
+body .ypop-wrapper fieldset {
+  padding: 0;
+}
+body .ypop-wrapper .form-row {
+  width: 100%;
+  margin: 0;
+}
+body .ypop-wrapper .ypop-container-inner {
+  position: relative;
+}
+body .ypop-wrapper .ypop-header {
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  background-position: center, center !important;
+}
+body .ypop-wrapper .ypop-footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+  padding: 25px;
+}
+body .ypop-wrapper .ypop-content-wrapper {
+  overflow: hidden;
+}
+body .ypop-wrapper .ypop-content-type ul li:last0child {
+  margin-bottom: 0;
+}
+body .ypop-wrapper .ypop-content-type ul li:before {
+  content: none;
+}
+body .ypop-wrapper .ypop-content-type ul.group li {
+  margin-bottom: 0;
+}
+body .ypop-wrapper .ypop-content-type .group {
+  position: relative;
+}
+body .ypop-wrapper .ypop-content-type .group .ypop-submit {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+body .ypop-wrapper .ypop-content-type .group .ypop-submit button:after {
+  border-color: currentColor !important;
+}
+body .ypop-wrapper .ypop-content {
+  width: 100%;
+  margin: 0;
+  padding: 45px 65px;
+  outline-width: 2px;
+  outline-style: dashed;
+  outline-offset: -7px;
+}
+body .ypop-wrapper .ypop-content .ypop-right {
+  padding-top: 50%;
+}
+body .ypop-wrapper .ypop-content .ypop-title {
+  margin: 0 0 20px;
+  padding: 0;
+}
+body .ypop-wrapper .ypop-content .ypop-title > * {
+  margin: 0;
+}
+body .ypop-wrapper .ypop-content .ypop-precontent {
+  margin: 0 0 20px;
+}
+body .ypop-wrapper .ypop-content .wpcf7 {
+  position: relative;
+}
+body .ypop-wrapper .ypop-content .wpcf7 input[type=submit]:hover {
+  background-color: transparent;
+}
+body .ypop-wrapper .share-container {
+  text-align: center;
+}
+body .ypop-wrapper .product-info .price {
+  margin-top: 22px;
+}
+body .ypop-wrapper .product-info .add_to_cart,
+body .ypop-wrapper .product-info .summary {
+  margin-top: 20px;
+}
+body .ypop-wrapper .product-info .add_to_cart a:hover {
+  background-color: transparent;
+}
+body .ypop-wrapper .ypop-checkzone {
+  padding: 0 10px;
+  text-align: left;
+}
+body .ypop-wrapper .ypop-checkzone span {
+  vertical-align: middle;
+  float: none;
+}
+body .ypop-wrapper .ypop-checkzone label {
+  display: none;
+}
+body .ypop-wrapper img.alignnone {
+  margin-bottom: 0;
+}
+/*-------------------------------------------------------------------------*/
+/* CSS3 Animations
+/*-------------------------------------------------------------------------*/
+html.csstransitions body .ypop-wrapper .ypop-content .wpcf7-submit,
+html.csstransitions body .ypop-wrapper .ypop-content .wpcf7-submit:after {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}

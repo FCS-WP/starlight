@@ -1,0 +1,75 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.0
+ * 
+ * Yith WooCommerce Zoom Magnifier RTL Rules
+ * Created by CMSMasters
+ * 
+ */
+
+
+/*-------------------------------------------------------------------------*/
+/*	1. Single Product */
+/*-------------------------------------------------------------------------*/
+body {
+	unicode-bidi: embed;
+	direction: rtl;
+}
+
+.cmsmasters_product_left_column .yith_magnifier_gallery li {
+	float: none;
+}
+
+.cmsmasters_product_left_column .yith_magnifier_gallery li a {
+	text-align: center;
+}
+
+.cmsmasters_product_left_column .images {
+	text-align: center;
+}
+
+.cmsmasters_product_left_column .images.right .yith_magnifier_zoom_magnifier {
+	margin-left: 0;
+	margin-right: 60px;
+}
+
+.cmsmasters_product_left_column .images .yith_magnifier_zoom_wrap {
+	text-align: center;
+}
+
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-prev,
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-next {
+	text-align: center;
+}
+
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-prev:before,
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-next:before {
+	left: 0;
+	right: 0;
+}
+
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-prev {
+	left: auto;
+	right: 5px;
+}
+
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-prev:before {
+	content: '\eb21'; /* Check this rule! */
+}
+
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-next {
+	left: 5px;
+	right: auto;
+}
+
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-next:before {
+	content: '\eb22'; /* Check this rule! */
+}
+
+@media only screen and (max-width:768px) {
+.pp_woocommerce .pp_content_container .pp_close {
+	right: auto;
+	left: 0;
+}
+}

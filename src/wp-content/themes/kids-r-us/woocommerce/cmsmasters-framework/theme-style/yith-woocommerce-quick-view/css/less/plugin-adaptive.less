@@ -1,0 +1,158 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.0
+ * 
+ * Responsive Design Yith WooCommerce Quick View CSS Rules
+ * Created by CMSMasters
+ * 
+ */
+
+
+@import "../../../../../../theme-framework/theme-style/css/less/general.less";
+
+
+@media only screen {
+	/*-------------------------------------------------------------------------*/
+	/*	Small Tablet Monitor
+	/*-------------------------------------------------------------------------*/
+	
+	@media @monitor_tablet_small {
+		html {
+			/***************** Free Version - Single Product Quick View ******************/
+			#yith-quick-view-modal {
+				.single-product {
+					div.summary {
+						.product_meta {
+							> span {
+								.cmsmasters_product_meta_title {
+									width:auto;
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			#yith-quick-view-modal {
+				.single-product {
+					padding-right:0;
+					> .product {
+						max-height:100%;
+						overflow:auto;
+						> .product {
+							> div {
+								&.images,
+								&.summary {
+									float:none;
+									width:100%;
+									max-height:100%;
+								}
+								
+								&.images {
+									margin:0 0 40px;
+									padding:0 15px 0 0;
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			
+			/***************** Premium Version - Single Product Quick View ******************/
+			.yith-quick-view.yith-modal,
+			.yith-quick-view.yith-inline {
+				.single-product {
+					> .product {
+						> .product {
+							div .images {
+								float:none !important;
+								width:100% !important;
+								padding-right:0;
+							}
+						}
+					}
+					
+					
+					div.summary {
+						.summary-content {
+							float:none !important;
+							width:100% !important;
+						}
+						
+						
+						
+						.product_meta {
+							> span {
+								.cmsmasters_product_meta_title {
+									width:auto;
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			.woocommerce .products .product:nth-of-type(2n), 
+			.woocommerce-page .products .product:nth-of-type(2n) {
+				.fl;
+			}
+		}
+	}
+	
+	
+	
+	/*-------------------------------------------------------------------------*/
+	/*	Phone Monitor
+	/*-------------------------------------------------------------------------*/
+	
+	@media @monitor_phone {
+		html {
+			/***************** Free Version - Single Product Quick View ******************/
+			.yith-wcqv-wrapper {
+				.summary-content {
+					padding-bottom:30px;
+				}
+			}
+			
+			#yith-quick-view-modal {
+				.single-product {
+					> .product {
+						> .product {
+							> div {
+								&.summary {
+									.cart .quantity {
+										display:block;
+										margin-bottom:10px;
+										margin-right:0;
+										
+										+ .single_add_to_cart_button {
+											margin:0;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			.yith-quick-view.yith-modal {
+				.single-product {
+					div.summary {
+						.cart .quantity {
+							display:block;
+							margin-bottom:10px;
+							margin-right:0;
+							
+							+ .single_add_to_cart_button {
+								margin:0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

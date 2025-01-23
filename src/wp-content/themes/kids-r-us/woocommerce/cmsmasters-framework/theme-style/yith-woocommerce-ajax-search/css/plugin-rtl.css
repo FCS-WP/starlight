@@ -1,0 +1,29 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.0
+ * 
+ * Yith WooCommerce Ajax Search RTL Rules
+ * Created by CMSMasters
+ * 
+ */
+
+body {
+	unicode-bidi: embed;
+	direction: rtl;
+}
+
+.widget.yith_woocommerce_ajax_search .yith-ajaxsearchform-container .search-input-container input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=image]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=color]):not([type=range]),
+.widget.yith_woocommerce_ajax_search .yith-ajaxsearchform-container .search_field input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=image]):not([type=radio]):not([type=reset]):not([type=submit]):not([type=color]):not([type=range]) {
+	padding-left: 67px;
+}
+
+html .yith-ajaxsearchform-container .search_bar_wrap .search-navigation.search_field {
+	left: auto;
+	right: 50%;
+}
+
+html .yith-ajaxsearchform-container .autocomplete-suggestion div.badges {
+	left: 10px;
+	right: auto;
+}

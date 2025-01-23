@@ -1,0 +1,193 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.0
+ * 
+ * Yith WooCommerce Popup CSS Rules
+ * Created by CMSMasters
+ * 
+ */
+
+
+
+@import "../../../../../../theme-framework/theme-style/css/less/general.less";
+
+
+
+/* -------------------------------- Start Yith WooCommerce Popup Theme 1 Styles -------------------------------- */
+
+body .ypop-modal.open {
+	overflow:hidden;
+}
+
+body .ypop-wrapper {
+	padding:0;
+	overflow:visible !important;
+	
+	.ypop-product-wrapper * {
+		.tac;
+	}
+	
+	 a.close {
+	 	top:-15px;
+	 	right:-15px;
+	 }
+	
+	fieldset {
+		padding:0;
+	}
+	
+	.form-row {
+		width:100%;
+		margin:0;
+	}
+	
+	.ypop-container-inner {
+		position:relative;
+	}
+	
+	.ypop-header {
+		-webkit-background-size:cover !important;
+		background-size:cover !important;
+		background-position:center, center !important;
+	}	
+	
+	.ypop-footer {
+		position:absolute;
+		width:100%;
+		left:0;
+		bottom:0;
+		background-color:transparent;
+		padding:25px;
+	}
+	
+	.ypop-content-wrapper {
+		.ovh;
+	}
+		
+	.ypop-content-type {
+		ul {
+			li {
+				
+				&:last0child {
+					margin-bottom:0;
+				}
+				
+				&:before {
+					content:none;	
+				}
+			}
+			
+			&.group {
+				li {
+					margin-bottom:0;
+				}
+			}	
+		} 
+		
+		.group {
+			position:relative;
+			
+			.ypop-submit {
+				position:absolute;
+				right:0;
+				bottom:0;
+				margin:0;
+				padding:0;
+				
+				button {
+					&:after {
+						border-color:currentColor !important;
+					}
+				}
+			}
+		}
+	}
+	
+	.ypop-content {
+		width:100%;
+		margin:0;
+		padding:45px 65px;
+		.outldash;
+		
+		.ypop-right {
+			padding-top:50%;
+		}
+		
+		.ypop-title {
+			margin:0 0 20px;
+			padding:0;
+			
+			> * {
+				margin:0;
+			}
+		}
+		
+		.ypop-precontent {
+			margin:0 0 20px;
+		}
+		
+		.wpcf7 {
+			position:relative;
+		
+			input[type=submit] {
+				&:hover {
+					background-color:transparent;
+				}
+			}
+		}
+	}
+	
+	.share-container {
+		.tac;
+	}
+	
+	.product-info {
+		.price {
+			margin-top:22px;
+		}
+		
+		.add_to_cart, 
+		.summary {
+			margin-top:20px;
+		}
+		
+		.add_to_cart {
+			a {
+				&:hover {
+					background-color:transparent;
+				}
+			}
+		}
+	}
+	
+	.ypop-checkzone {
+		padding:0 10px;
+		.tal;
+		
+		span {
+			vertical-align:middle;
+			float:none;
+		}
+		
+		label {
+			display:none;
+		}
+	}
+	
+	img.alignnone {
+		margin-bottom:0;
+	}
+}
+
+
+/*-------------------------------------------------------------------------*/
+/* CSS3 Animations
+/*-------------------------------------------------------------------------*/
+
+html.csstransitions {
+	body .ypop-wrapper .ypop-content .wpcf7-submit, 
+	body .ypop-wrapper .ypop-content .wpcf7-submit:after {
+		.trans(~'all .3s ease-in-out');
+	}
+}

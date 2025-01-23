@@ -1,0 +1,93 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.0
+ * 
+ * Yith WooCommerce Color and Label Variations CSS Rules
+ * Created by CMSMasters
+ * 
+ */
+
+
+
+@import "../../../../../../theme-framework/theme-style/css/less/general.less";
+
+
+
+/* -------------------------------- Start Yith WooCommerce Color and Label Variations Styles -------------------------------- */
+
+/* -------------------------------- Free Version -------------------------------- */
+
+html {
+	body {
+		
+		.yith-quick-view-content{
+			&.woocommerce {
+				div {
+					&.summary {
+						table{
+							&.variations {
+								td {
+									display:table-cell;
+									vertical-align:middle;
+									line-height:1;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.select_option_label {
+			.bd(0);
+		}
+
+		.select_option_colorpicker {
+			margin:0 5px 0 0;
+			.bd;
+			
+			.yith_wccl_value {
+				width:18px;
+				min-width:18px;
+				height:18px;
+				min-height:18px;
+				.bd(2px);
+				.tal;
+			}
+		}
+		
+		.select_option_colorpicker, 
+		.select_option_colorpicker > span {
+			.bdrs(50%);
+		}		
+	}
+}
+
+
+/* -------------------------------- Premium Version -------------------------------- */
+html {
+	body {
+		.shop_attributes {
+			td {
+				.select_box.on_ptab {
+					display:inline-block;
+					vertical-align:middle;
+				}
+			}
+		}
+	}
+}
+
+
+/*-------------------------------------------------------------------------*/
+/* CSS3 Animations
+/*-------------------------------------------------------------------------*/
+
+html.csstransitions {
+	/* Custom Animations */
+	body .select_option,
+	body .select_option > span {
+		.trans(~'color .3s ease-in-out, border-color .3s ease-in-out');
+	}
+}

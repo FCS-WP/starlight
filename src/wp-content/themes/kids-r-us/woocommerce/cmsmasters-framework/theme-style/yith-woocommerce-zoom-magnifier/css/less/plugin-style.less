@@ -1,0 +1,181 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.0
+ * 
+ * Yith WooCommerce Zoom Magnifier CSS Rules
+ * Created by CMSMasters
+ * 
+ */
+
+
+
+@import "../../../../../../theme-framework/theme-style/css/less/general.less";
+
+
+
+/* -------------------------------- Start Yith WooCommerce Zoom Magnifier Styles -------------------------------- */
+.yith_magnifier_loading {
+	width:100% !important;
+}
+
+
+/*-------------------------------------------------------------------------*/
+/*	Single Product */
+/*-------------------------------------------------------------------------*/
+
+/***************** Single Product Thumbnail Slider ******************/
+.cmsmasters_product_left_column {
+	.caroufredsel_wrapper {
+		height:auto !important;
+		position:relative !important;
+	}
+	
+	.yith_magnifier_gallery {
+		height:auto !important;
+		position:relative !important;
+		margin: 0 -5px;
+		
+		li {
+			display:inline-block;
+			margin:10px 5px 0;
+			padding:0;
+			float:none;
+			
+			&.first {
+				margin:10px 5px 0 !important;
+			}
+			
+			&.last {
+				margin:10px 5px 0 !important;
+			}
+			
+			&:before {
+				content:none;
+			}
+
+			img {
+				width: 100%;
+			}
+			
+			a {
+				margin:0;
+				.tac;
+			}
+		}
+	}
+	
+	.yith_magnifier_zoom_magnifier {
+		.bd(0);
+	}
+	
+	.images {
+		.tac;
+		
+		&.right {
+			.yith_magnifier_zoom_magnifier {
+				margin:0 0 0 60px;
+			}
+		}
+		
+		.yith_magnifier_zoom_wrap {
+			.tac;
+		}
+	}
+}
+
+
+/***************** Single Product Thumbnail Slider Button ******************/
+.single-product.woocommerce {
+	.cmsmasters_single_product {
+		.thumbnails {
+			#slider-prev,
+			#slider-next {
+				font-size:20px;
+				background-image:none;
+				width:22px;
+				height:43px;
+				margin:auto !important;
+				top:10px;
+				bottom:0;
+				.bd;
+				.tac;
+				.op(0);
+				
+				&:before {
+					font-family:'fontello';
+					line-height:1em;
+					.pos_abs();
+				}
+			}
+			
+			#slider-prev {
+				left:5px;
+				right:auto;
+				
+				&:before {
+					content:'\eb21';
+				}
+			}
+			
+			#slider-next {
+				left:auto;
+				right:5px;
+				
+				&:before {
+					content:'\eb22';
+				}
+			}
+			
+			&:hover {
+				#slider-prev,
+				#slider-next {
+					.op(1);
+				}
+			}
+		}
+	}
+}
+
+
+/***************** Popup ******************/
+body div.pp_woocommerce {
+	.pp_content_container {
+		padding:20px 0;
+		.bdrs(0);
+		.bxsh_none;
+		
+		.pp_close {
+			text-shadow:none !important;
+		}
+		
+		.pp_right {
+			padding-right:20px;
+		}
+		
+		.pp_left {
+			padding-left:20px;
+		}
+		
+		.pp_content {
+			overflow-y:auto;
+			overflow-x:hidden;
+			height:auto !important;
+			margin:0;
+			.display_flex;
+			.align_items(center);
+		}
+		
+		.pp_details {
+			padding:0;
+		}
+	}
+}
+
+/*-------------------------------------------------------------------------*/
+/*	CSS3 Animations	*/
+/*-------------------------------------------------------------------------*/
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-prev,
+.single-product.woocommerce .cmsmasters_single_product .thumbnails #slider-next {
+	.trans(~'color .3s ease-in-out, opacity .3s ease-in-out');
+}

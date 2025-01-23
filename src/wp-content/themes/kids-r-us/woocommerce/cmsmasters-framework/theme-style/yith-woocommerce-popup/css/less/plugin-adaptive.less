@@ -1,0 +1,50 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	Kids R Us
+ * @version 	1.0.0
+ * 
+ * Responsive Design Yith WooCommerce Popup CSS Rules
+ * Created by CMSMasters
+ * 
+ */
+
+
+
+@import "../../../../../../theme-framework/theme-style/css/less/general.less";
+
+
+@media only screen {
+	@media @monitor_tablet {
+		.ypop-header {
+			display:none;
+		}
+	}
+	
+	@media @monitor_tablet_small {
+		.ypop-wrapper {
+			width:85% !important;
+		}
+	}
+	
+	@media @monitor_767 {
+		.ypop-wrapper {
+			position:fixed !important;
+		}
+	}
+	
+	@media @monitor_phone {
+		body .ypop-wrapper .ypop-content {
+			padding:25px 20px 75px;
+		}
+		
+		body .ypop-wrapper .ypop-content-type .group .ypop-submit {
+			position:relative;
+			margin-top:20px;
+		}
+		
+		body .ypop-wrapper {
+			height:auto !important;
+			max-height:90%;
+		}
+	}
+}
