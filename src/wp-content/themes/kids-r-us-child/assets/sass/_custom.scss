@@ -1,0 +1,26 @@
+.middle_content {
+  padding: 20px 0 !important;
+  max-width: 1400px !important;
+  margin: 0 auto !important;
+}
+.select-caret-down-wrapper {
+  display: none !important;
+}
+input , textarea , select {
+  border-style: dashed !important;
+  border-color: #d6d6d6 !important;
+}
+.blog .post {
+    width: 100% !important;
+  }
+
+.sider-banner{
+  h3{
+    text-align: center;
+  }
+  input{
+    background: transparent !important;
+    border: 2px dashed white !important;
+    color: white !important;
+  }
+}
