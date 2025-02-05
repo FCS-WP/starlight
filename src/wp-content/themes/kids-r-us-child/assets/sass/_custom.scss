@@ -6,21 +6,64 @@
 .select-caret-down-wrapper {
   display: none !important;
 }
-input , textarea , select {
+input,
+textarea,
+select {
   border-style: dashed !important;
   border-color: #d6d6d6 !important;
 }
 .blog .post {
-    width: 100% !important;
-  }
+  width: 100% !important;
+}
 
-.sider-banner{
-  h3{
+.sider-banner {
+  h3 {
     text-align: center;
   }
-  input{
+  input {
     background: transparent !important;
     border: 2px dashed white !important;
     color: white !important;
+  }
+}
+footer {
+  position: relative;
+  > div {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -32px;
+      right: 0;
+      background-repeat: repeat;
+      height: 33px;
+      background-size: 63px 80px;
+      background-position: top center;
+      z-index: 100;
+      border-top: 0 solid #fff;
+      background-image: radial-gradient(
+        circle at 50% -13px,
+        transparent 44px,
+        #f4c2c2 40px
+      );
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -35px;
+      right: 0;
+      background-repeat: repeat;
+      height: 40px;
+      background-size: 126px 80px;
+      background-position: bottom center;
+      z-index: 100;
+      background-image: radial-gradient(
+        circle at 50% 102px,
+        #f4c2c2 52px,
+        transparent 50px
+      );
+    }
   }
 }
