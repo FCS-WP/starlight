@@ -27,7 +27,7 @@ $cmsmasters_option = kids_r_us_get_global_options();
 		</div>
 	</div>
 </div>
-<div class="content_wrap fullwidth">
+<div class="content_wrap fullwidth 1">
 	<div class="error_cont">
 		<?php 
 		if ($cmsmasters_option['kids-r-us' . '_error_search']) { 
